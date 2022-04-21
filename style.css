@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+#banner {
+  background-color: #EBEBEB;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  clip-path: polygon(100% 0%, 100% 82%, 0 100%, 0 100%, 0 0);
+}
+
+/* for logo starts */
+.grapherdesklogo {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 69px;
+}
+
+.margin-logo {
+  margin-bottom: 50px;
+}
+
+/* for logo ends */
+.t {
+  padding-top: 31px;
+
+}
+
+/* images css starts */
+
+.Ellipse {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 108px;
+}
+
+.image-Ellipse {
+  width: 30px;
+  height: 30px;
+
+}
+
+.image-Group-8 {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: 10px;
+  bottom: 50px;
+}
+
+.group-8 {
+  width: 91px;
+  height: 81px;
+}
+
+.Ellipse-17 {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  bottom: 30px;
+}
+
+.Ellipse-9 {
+  width: 90px;
+  height: 90px;
+}
+
+.megaphone {
+  display: flex;
+  justify-content: center;
+}
+
+.image-megaphone {
+  width: 391px;
+  height: 343px;
+}
+
+.Ellipse-131 {
+  width: 30px;
+  height: 30px;
+}
+
+.image-Ellipse-13 {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: 166px;
+  left: 17px;
+}
+
+.group-10 {
+  width: 120px;
+  height: 81px;
+}
+
+.images-group-10 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 10px;
+}
+
+.Ellipse-13 {
+  width: 45x;
+  height: 45px;
+  position: relative;
+  top: 50px;
+
+}
+
+.setting {
+  position: absolute;
+  bottom: 30px;
+  left: 200px;
+}
+
+/* image css ends */
+.content-1 {
+  font-weight: bolder;
+  font-size: 57px;
+  color: #545454;
+  letter-spacing: 20.4px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+
+}
+
+.hire,
+.creative {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.content-2 {
+  letter-spacing: 1.6px;
+  color: #545454;
+  position: relative;
+  bottom: 40px;
+  left: 25px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.main-btn {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  right: 57px;
+  bottom: 20px;
+}
+
+.main-btn-1 {
+  position: relative;
+  right: 7px;
+  text-transform: capitalize;
+  border: 1px solid white;
+  letter-spacing: 0.72px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #545454;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 29px;
+  border-radius: 5px;
+  box-shadow: #00000029 0px 3px 6px;
+}
+
+.main-btn-2 {
+  border: 1px solid #545454;
+  letter-spacing: 0.72px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-image: linear-gradient(#545454, #111111);
+  color: #EBEBEB;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-btn-1:hover {
+  color: #545454;
+}
+
+.main-btn-2:hover {
+  color: #EBEBEB;
+}
+
+/* .slantdiv {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #EBEBEB;
+  top: 0;
+  left: 0;
+  background-color: black; 
+  transform: skewY(-7deg);
+  transform-origin: top right;
+  z-index: -1;
+} */ 
