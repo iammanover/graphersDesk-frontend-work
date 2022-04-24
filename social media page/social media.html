@@ -15,12 +15,17 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- custom css -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- custom javascript -->
+  <script src="../home page/index.js"></script>
+
+
   <title>Document</title>
 </head>
 
 <body>
   <section id="page-2" class="page-2">
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="flip-down" data-aos-delay="1000">
       <div class="row">
         <div class="col-12 section-1">
           <img class="graphersdesk" src="../home page/images/graphersdesk-logo-v1-TEXT.png" alt="graphersdesk-logo">
@@ -28,7 +33,7 @@
       </div>
     </div>
 
-    <div class="container-fluid section-2">
+    <div class="container-fluid section-2"  data-aos="zoom-out-up">
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -66,6 +71,29 @@
       </div>
     </div>
   </section>
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+
+  <script>
+    AOS.init({
+      offset: 120,
+      delay: 0,
+      duration: 1000,
+      easing: 'ease',
+      once: false,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+
+  </script>
 </body>
 
 </html>
