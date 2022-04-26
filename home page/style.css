@@ -205,4 +205,107 @@
   transform: skewY(-7deg);
   transform-origin: top right;
   z-index: -1;
-} */ 
+} */
+
+
+/* for hiding mobile view in bigger screen starts */
+@media only screen and (min-width: 1281px) {
+  #respo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #respo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #respo {
+    display: none;
+  }
+}
+
+/* for hiding mobile view in bigger screen ends */
+@media only screen and (max-width: 768px) {
+  #banner {
+    display: none;
+  }
+
+  .setting {
+    display: none;
+  }
+
+  #respo {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .image-Ellips {
+    width: 10vw;
+  }
+
+  .media-2 {
+    display: flex;
+    justify-content: end;
+  }
+
+  .grapherdesklogo-1 {
+    display: flex;
+    justify-content: center;
+    height: 69px;
+  }
+
+  .media-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hir {
+    font-size: 10vw;
+    font-weight: bolder;
+    color: #545454;
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 10px; */
+  }
+
+  .creativ {
+    font-size: 5vw;
+    color: #545454;
+    font-family: 'Roboto', sans-serif;
+  }
+.main-btn-3{
+  text-transform: capitalize;
+  border: 1px solid white;
+  letter-spacing: 0.72px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #545454;
+  font-family: 'Roboto', sans-serif;
+  /* margin-right: 29px;*/
+  border-radius: 5px; 
+  box-shadow: #00000029 0px 3px 6px;
+  font-size: 5vw;
+}
+.main-btn-4{
+  border: 1px solid #545454;
+  letter-spacing: 0.72px;
+  padding: 10px 16px;
+  text-decoration: none;
+  background-image: linear-gradient(#545454, #111111);
+  color: #EBEBEB;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5vw;
+}
+.main-btn-3:hover {
+  color: #545454;
+}
+
+.main-btn-4:hover {
+  color: #EBEBEB;
+}
+}
