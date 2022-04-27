@@ -285,10 +285,11 @@
   background-color: #FFFFFF;
   color: #545454;
   font-family: 'Roboto', sans-serif;
-  /* margin-right: 29px;*/
+  margin-right: 7px;
   border-radius: 5px; 
   box-shadow: #00000029 0px 3px 6px;
   font-size: 5vw;
+  
 }
 .main-btn-4{
   border: 1px solid #545454;
@@ -300,6 +301,7 @@
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 5vw;
+  margin-right:2px;
 }
 .main-btn-3:hover {
   color: #545454;
