@@ -5,16 +5,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
+
+
 
 #banner {
   background-color: #EBEBEB;
   width: 100%;
   height: 100vh;
   position: relative;
-  clip-path: polygon(100% 0%, 100% 82%, 0 100%, 0 100%, 0 0);
+  overflow-x: hidden;
+  
 }
+
+.banner_class{
+  background-image: url('images/path\ 2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+/* .bor {
+  border: 1px solid black;
+} */
+
+/* .bb {
+  margin-top: -32px;
+  margin-bottom: -12px;
+} */
 
 /* for logo starts */
 .grapherdesklogo {
@@ -24,14 +41,16 @@
   height: 69px;
 }
 
-.margin-logo {
+/* .margin-logo {
   margin-bottom: 50px;
-}
+} */
 
 /* for logo ends */
-.t {
-  padding-top: 31px;
 
+.media-10 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 /* images css starts */
@@ -39,8 +58,7 @@
 .Ellipse {
   display: flex;
   justify-content: center;
-  position: relative;
-  left: 108px;
+
 }
 
 .image-Ellipse {
@@ -49,12 +67,30 @@
 
 }
 
+#slant-div {
+  background-color: #EBEBEB;
+
+}
+
+.img-fluid-1 {
+  width: 105%;
+  height: auto;
+}
+
+.slant-div {
+  margin: 0;
+  width: 105%;
+  position: relative;
+  height: 150px;
+  right: -10px;
+}
+
 .image-Group-8 {
   display: flex;
   justify-content: end;
   position: relative;
-  left: 10px;
-  bottom: 50px;
+  top: 30px;
+  right: -5px;
 }
 
 .group-8 {
@@ -80,34 +116,39 @@
 }
 
 .image-megaphone {
-  width: 391px;
-  height: 343px;
+  /* width: 469px;
+  height: 400px; */
+  width: 425px;
+  height: 315px;
 }
 
 .Ellipse-131 {
-  width: 30px;
-  height: 30px;
+  width: 57px;
+  height: 52px;
 }
+
 
 .image-Ellipse-13 {
   display: flex;
   justify-content: end;
   position: relative;
-  top: 166px;
-  left: 17px;
+  left: 23px;
+  bottom: 130px;
 }
 
 .group-10 {
   width: 120px;
   height: 81px;
+
 }
 
 .images-group-10 {
-  display: flex;
-  justify-content: space-between;
   position: relative;
-  right: 10px;
+  top: 30px;
+  left: -10px;
+
 }
+
 
 .Ellipse-13 {
   width: 45x;
@@ -117,13 +158,11 @@
 
 }
 
-.setting {
-  position: absolute;
-  bottom: 30px;
-  left: 200px;
-}
+
 
 /* image css ends */
+
+/* text css starts */
 .content-1 {
   font-weight: bolder;
   font-size: 57px;
@@ -131,14 +170,11 @@
   letter-spacing: 20.4px;
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
-
+  flex-wrap: nowrap;
 }
 
-.hire,
-.creative {
-  display: flex;
-  justify-content: end;
-  align-items: center;
+.margin {
+  margin-top: 100px;
 }
 
 .content-2 {
@@ -148,9 +184,12 @@
   bottom: 40px;
   left: 25px;
   font-family: 'Roboto', sans-serif;
-
+  flex-wrap: nowrap;
 }
 
+/* text css ends */
+
+/* button css starts */
 .main-btn {
   display: flex;
   justify-content: end;
@@ -194,18 +233,7 @@
   color: #EBEBEB;
 }
 
-/* .slantdiv {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: #EBEBEB;
-  top: 0;
-  left: 0;
-  background-color: black; 
-  transform: skewY(-7deg);
-  transform-origin: top right;
-  z-index: -1;
-} */
+/* button css ends */
 
 
 /* for hiding mobile view in bigger screen starts */
@@ -213,6 +241,8 @@
   #respo {
     display: none;
   }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -225,31 +255,100 @@
   #respo {
     display: none;
   }
+
+
 }
 
+@media only screen and (min-width:578px) {
+  #respo {
+    display: none;
+  }
+
+
+}
+
+
+
+
+/* some correction in bg screen */
+@media only screen and (max-width: 810px) {
+  .content-1 {
+    font-weight: bolder;
+    font-size: 57px;
+    color: #545454;
+    letter-spacing: 10.4px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+
+  .margin {
+    margin-top: 100px;
+  }
+
+  .content-2 {
+    letter-spacing: 0.6px;
+    color: #545454;
+    position: relative;
+    bottom: 40px;
+    left: 25px;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: nowrap;
+  }
+
+  .main-btn {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+  }
+
+}
+
+
+
 /* for hiding mobile view in bigger screen ends */
-@media only screen and (max-width: 768px) {
+
+
+/* CSS for mobile view */
+/* max-width: 528px */
+@media only screen and (max-width: 578px) {
   #banner {
     display: none;
   }
 
-  .setting {
-    display: none;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   #respo {
     background-color: #EBEBEB;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
+    overflow-x: hidden;
+    background-image: url('images/Path\ 30-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
   }
 
-  .image-Ellips {
-    width: 10vw;
+  #slant-di {
+    background-color: #EBEBEB;
+    width: 100%;
+    height: 25vh;
   }
 
-  .media-2 {
-    display: flex;
-    justify-content: end;
+  .img-fluid-1 {
+    width: 105%;
+    height: auto;
+  }
+
+  .slant-di {
+    width: 105%;
+    height: 25vh;
   }
 
   .grapherdesklogo-1 {
@@ -258,9 +357,60 @@
     height: 69px;
   }
 
-  .media-1 {
+  .size {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    bottom: 75px;
+    left: 15px;
+  }
+
+  .image-size {
+    width: 150px;
+    height: 89px;
+    position: relative;
+    right: 111px
+  }
+
+  .image-Ellips {
+    width: 20px;
+    height: 20px;
+  }
+
+  .media-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+  }
+
+  .media-4 {
+    display: flex;
+    justify-content: start;
+  }
+
+  .media-3 {
     display: flex;
     justify-content: center;
+  }
+
+  .media-1 {
+    display: flex;
+    justify-content: end;
+  }
+
+  .media-1 img {
+    position: relative;
+    left: 13px;
+  }
+
+  .mt-3 {
+    margin-top: 3rem !important;
+  }
+
+  .grou-8 {
+    width: 74px;
+    height: 94px
   }
 
   .hir {
@@ -268,7 +418,7 @@
     font-weight: bolder;
     color: #545454;
     font-family: 'Open Sans', sans-serif;
-    /* padding: 10px; */
+
   }
 
   .creativ {
@@ -276,38 +426,41 @@
     color: #545454;
     font-family: 'Roboto', sans-serif;
   }
-.main-btn-3{
-  text-transform: capitalize;
-  border: 1px solid white;
-  letter-spacing: 0.72px;
-  padding: 10px 16px;
-  text-decoration: none;
-  background-color: #FFFFFF;
-  color: #545454;
-  font-family: 'Roboto', sans-serif;
-  margin-right: 7px;
-  border-radius: 5px; 
-  box-shadow: #00000029 0px 3px 6px;
-  font-size: 5vw;
-  
-}
-.main-btn-4{
-  border: 1px solid #545454;
-  letter-spacing: 0.72px;
-  padding: 10px 25px;
-  text-decoration: none;
-  background-image: linear-gradient(#545454, #111111);
-  color: #EBEBEB;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 5vw;
-  margin-right:2px;
-}
-.main-btn-3:hover {
-  color: #545454;
-}
 
-.main-btn-4:hover {
-  color: #EBEBEB;
-}
+  .main-btn-3 {
+    text-transform: capitalize;
+    border: 1px solid white;
+    letter-spacing: 0.72px;
+    padding: 10px 16px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #545454;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 7px;
+    border-radius: 5px;
+    box-shadow: #00000029 0px 3px 6px;
+    font-size: 5vw;
+
+  }
+
+  .main-btn-4 {
+    border: 1px solid #545454;
+    letter-spacing: 0.72px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-image: linear-gradient(#545454, #111111);
+    color: #EBEBEB;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 5vw;
+    margin-right: 2px;
+  }
+
+  .main-btn-3:hover {
+    color: #545454;
+  }
+
+  .main-btn-4:hover {
+    color: #EBEBEB;
+  }
 }

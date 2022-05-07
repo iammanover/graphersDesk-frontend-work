@@ -12,6 +12,7 @@
   width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 .section-1 {
@@ -94,11 +95,12 @@
 
 .main-btn {
   display: flex;
-  justify-content: center;
-  margin-top: 22px;
+  justify-content: end;
   position: relative;
-  right: 29px;
+  right: 57px;
+  bottom: 20px;
 }
+
 
 .main-btn-1 {
   position: relative;
